@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> AfterBreastCancer</title>
+    <style>
+      .image{
+  width: 100%;
+  height: 220vh;
+  background-size: contain;
+  background-image: url(https://images.unsplash.com/photo-1598885159329-9377168ac375?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80) ;
+}
+.image-overlay{
+  width: 100%;
+  height: 220vh;
+  background-color:rgba(255, 255, 255,0.6) ;
+}
+       nav{
+            background-color: rgb(255, 192, 203,0.5);
+        }
+        #two{
+          color: #F25278;
+        }
+        #btn1{
+            background-color: #DE3163;
+        }
+        #btn3{
+            background-color: #fd5da8;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  <div class="image">
+    <div class="image-overlay">
+    <!--navbar-->
+    
+        
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a href="home.html" class="navbar-brand">
+            <i class="fa fa-ribbon" style="color: hotpink; font-size: 25px;"></i>
+                   AfterBreastCancer
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Breast Cancer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hope.html" class="nav-link">Hope Kit</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </nav>
+
+   <!--showcase-->
+   <section class="text-dark p-5 p-lg-0 pt-lg-5 text-center bg-body">
+    <div class="container">
+       <div class="row g-5 text-center">
+        <div class="col-md">
+          <img src="https://media.istockphoto.com/photos/woman-with-cancer-reviews-test-results-with-doctor-picture-id1141776223?k=20&m=1141776223&s=612x612&w=0&h=Grq5wWLozk9Yr4HmmjYQ0xrdycEgR4HHyeQW6rbCw10=" alt="" class="img-fluid">
+        </div>
+        <div class="col-md py-5">
+          <h1> <span id="two"> No One </span>should face Breast Cancer  <span id="two">Alone.</span></h1>
+                <p class="lead">Raising awareness of the scope and seriousness of this disease is one of the most important and impactful functions of breast cancer events and promotional items. </p>
+                <button class="btn btn-lg" id="btn1" onclick="display()">Quick Check</button>
+        </div>
+       </div>
+    </div>
+   </section>
+
+   <!--knowlegde-->
+   <section class="p-5">
+    <div class="container">
+        <div class="row text-center g-5">
+            <h2 class="text-dark">Learn About Breast Cancer</h2>
+            <p class="lead text-muted p-0">Every Ribbon Makes a difference</p>
+            <div class="col-md">
+                <div class="card"  style="width: 18rem; height: 19rem;">
+                    <div class="card-body" >
+                      <h5 class="card-title"  id="two">About Breast Cancer</h5>
+                      <h6 class="card-subtitle mb-2"> </h6>
+                      <p class="card-text"> Get basic information about breast cancer, such as what it is, how it starts, the different types, recent stats, as well as new research being done.</p>
+                      <a  href="https://www.cancer.org/cancer/breast-cancer/about.html" role="button" id="btn3" class="btn">Visit</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md">
+                <div class="card"  style="width:18rem; height: 19rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"  id="two">Breast Cancer Risk and Prevention</h5>
+                      <h6 class="card-subtitle mb-2"></h6>
+                      <p class="card-text">Learn about Breast cancer risk factors,btoh genetic and lifestyle-related,as well as ways to prevent breast cancer.</p>
+                      <a  href="https://www.cancer.org/cancer/breast-cancer/risk-and-prevention.html" role="button" id="btn3" class="btn m-2">Visit</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; height: 19rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"  id="two">Breast Cancer Early Detection and diagnosis</h5>
+                      <h6 class="card-subtitle mb-2"></h6>
+                      <p class="card-text">Get  information about breast cancer detection through tests such as mammograms, other imaging tests and biopsies.</p>
+                      <a  href="https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection.html"  role="button" id="btn3" class="btn">Visit</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md">
+                <div class="card"  style="width: 18rem; height: 19rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"  id="two">Treating Breast Cancer</h5>
+                      <h6 class="card-subtitle mb-2"></h6>
+                      <p class="card-text"> If you’ve been diagnosed with breast cancer, learn about your options for treatment here, which may include surgery, radiation, or hormone therapy.</p>
+                      <a  href="https://www.cancer.org/cancer/breast-cancer/treatment.html" role="button" id="btn3" class="btn">Visit</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md">
+                <div class="card"  style="width: 18rem; height: 19rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"  id="two">Understanding a Breast Cancer Diagnosis</h5>
+                      <h6 class="card-subtitle mb-2"></h6>
+                      <p class="card-text">Get the information you need to understand your breast cancer diagnosis, such as the hormone receptor  and cancer stage.</p>
+                      <a  href="https://www.cancer.org/cancer/breast-cancer/treatment.html" role="button" id="btn3" class="btn">Visit</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md">
+                <div class="card" style="width: 18rem; height: 19rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"  id="two">Living as a Breast Cancer Survivor</h5>
+                      <h6 class="card-subtitle mb-2"> </h6>
+                      <p class="card-text"> Learn more about living as a breast cancer survivor and get information about next steps, follow up care, and ways to look after your health.</p>
+                      <a  href="https://www.cancer.org/cancer/breast-cancer/living-as-a-breast-cancer-survivor.html" role="button" id="btn3" class="btn">Visit</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--footer-->
+
+   <footer class="p-3 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead" style="color:#F25278 ;">copyright &copy; 2022 AfterBreastCancer</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-3">
+            <i class="bi bi-arrow-up-circle h1" style="color:#F25278 ;"></i>
+        </a>
+    </div>
+   </footer>
+
+   
+  </div>
+</div>
+
+
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

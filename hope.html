@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> AfterBreastCancer</title>
+    <style>
+         .image{
+  width: 100%;
+  height: 165vh;
+  background-size: contain;
+  background-image: url(https://images.unsplash.com/photo-1598885159329-9377168ac375?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80) ;
+}
+.image-overlay{
+  width: 100%;
+  height: 165vh;
+  background-color:rgba(255, 255, 255,0.6) ;
+}
+       nav{
+            background-color: rgb(255, 192, 203,0.5);
+        }
+ 
+        #one{
+            color: #F25278;
+        }
+        #btn{
+            background-color: #fc94af;
+            color: white;
+        }
+        #btn:hover{
+            background-color: transparent;
+            border-color: #fc94af;
+            color: black;
+        }
+        .btn1{
+            background-color: #fd5da8;
+            color: white; 
+        }
+        .btn1:hover{
+            background-color: transparent;
+            border-color: #e11584;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <div class="image-overlay">
+            
+    <!--navbar-->
+
+
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a href="home.html" class="navbar-brand">
+            <i class="fa fa-ribbon" style="color: hotpink; font-size: 25px;"></i>
+                   AfterBreastCancer
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Breast Cancer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hope.html" class="nav-link">Hope Kit</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </nav>
+   <!--showcase-->
+   <section class="text-dark py-5 p-lg-0 pt-lg-5 text-center">
+    <div class="container">
+        <div class="row g-5 text-center">
+            <div class="col-md ">
+                <h1>Breast Cancer <span id="one"> Awareness Month</span></h1>
+                <p class="lead text-muted">
+                    Every October, people all over the world show their support for everyone affected by breast cancer.We’re focused on accelerating research and providing vital support, every way we can, all year round.This month, we’re committed to showing you that no matter who you are, whatever your experience of breast cancer – we’re always with you. 
+                </p>
+                <a href="#" onclick="display()" role="button" class="btn" id="btn">Share Your Story</a>
+            </div>
+            <div class="col-md">
+                <img src="https://media.istockphoto.com/photos/multiethnic-women-with-breast-cancer-awareness-ribbons-picture-id1170994066?k=20&m=1170994066&s=612x612&w=0&h=qeA6MWO9MzZXaNY_GHaIPnlv4Rjzv6cAq-bA926EH6s=" alt="" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--fact generator-->
+
+   <section class="p-5  mt-5 text-center text-dark" style="background-color: rgb(255, 182, 193,0.9);">
+    <div class="container">
+        <div class=" text-center">
+           <h1 class="p-3">HopeKit Quotes</h1>
+        </div>
+       <div class="row g-5 text-center">
+        <div class="col-md">
+            <img src="https://media.istockphoto.com/photos/hands-joined-in-circle-holding-breast-cancer-struggle-symbol-picture-id500428747?k=20&m=500428747&s=612x612&w=0&h=8f1YsQEj9OED50iHlCirLnZC5tIYx0Ajj2qg6XWmRA0=" alt="" class="img-fluid ">
+        </div>
+        <div class="col-md pt-5">
+            <p class="text-center lead" style="font-size: 15;" id="quote">October is Breast Cancer Awareness Month, an annual campaign to raise awareness about the impact of breast cancer. Join us as we RISE together to help uplift women in need.</p>
+            <button class="btn btn-lg m-2 btn1" id="mybtn">Give hope</button>
+        </div>
+       </div>
+    </div>
+   </section>
+
+
+   <!--support-->
+
+
+   <!--footer-->
+
+   <footer class="p-3 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead" style="color:#F25278 ;">copyright &copy; 2022 AfterBreastCancer</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-3" style="color:#F25278 ;">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+    </div>
+   </footer>
+
+   
+</div>
+</div>
+
+    <script>
+        function display(){
+            alert("This page is still underdevelopment");
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
